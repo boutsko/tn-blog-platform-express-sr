@@ -6,17 +6,16 @@ class Image extends React.Component {
     super(props);
   }
 
-    render() {
-        const image = this.props.post.image
-//        console.log(image);
-        return (
-            React.createElement(
-                'img',
-                {src: image.src,
-                 width: image.width,
-                 height: image.height,
-                 alt: image.alt}
-            )
+  render() {
+    const image = this.props.post.image
+    return (
+      React.createElement(
+        'img',
+        {src: image.src,
+         width: image.width,
+         height: image.height,
+         alt: image.alt}
+      )
     );
   }
 }

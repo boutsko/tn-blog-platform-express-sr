@@ -9,7 +9,7 @@ export default class BlogPage extends React.Component {
 
   render() {
     return (
-		React.createElement(BlogList, { posts })
+      React.createElement(BlogList, { posts })
     );
   }
 }
