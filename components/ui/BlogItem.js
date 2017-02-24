@@ -2,30 +2,29 @@
 import React from 'react'
 import TextBox from './TextBox';
 import Image from './Image';
-
-var assign = require('object-assign');
+import _ from 'lodash';
 
 class BlogItem extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    render() {
-        const post = this.props;
+  render() {
+    const post = this.props;
 
-        return  React.createElement(
-            'div',
-            {},
-            React.createElement(
-                TextBox,
-                Object.assign({}, post)
-            ),
-            React.createElement(
-                Image,
-                Object.assign({}, post)
-            )
-        );
-    }
+    return  React.createElement(
+      'div',
+      {},
+      React.createElement(
+        TextBox,
+        _.assign({}, post)
+      ),
+      React.createElement(
+        Image,
+        _.assign({}, post)
+      )
+    );
+  }
 }
 
 export default BlogItem;
