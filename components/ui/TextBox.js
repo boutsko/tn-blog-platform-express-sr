@@ -11,7 +11,7 @@ class TextBox extends React.Component {
       React.createElement(
         'span',
         {},
-		this.props.str
+        this.props.str
       )
     );
   }

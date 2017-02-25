@@ -15,13 +15,13 @@ class BlogItem extends React.Component {
       'div',
       {},
       React.createElement(
-		TextBox,
-		{str: post.str}
-	  ),
+        TextBox,
+        {str: post.str}
+      ),
       React.createElement(
-		Image,
-		{image: post.image}
-	  )
+        Image,
+        {image: post.image}
+      )
     );
   }
 }
