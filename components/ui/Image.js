@@ -7,7 +7,7 @@ class Image extends React.Component {
   }
 
   render() {
-    const image = this.props.post.image
+    const image = this.props.image;
     return (
       React.createElement(
         'img',

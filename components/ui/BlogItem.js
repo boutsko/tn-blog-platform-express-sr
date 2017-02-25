@@ -10,19 +10,18 @@ class BlogItem extends React.Component {
   }
 
   render() {
-    const post = this.props;
-
+    const post = this.props.post;
     return  React.createElement(
       'div',
       {},
       React.createElement(
-        TextBox,
-        _.assign({}, post)
-      ),
+		TextBox,
+		{str: post.str}
+	  ),
       React.createElement(
-        Image,
-        _.assign({}, post)
-      )
+		Image,
+		{image: post.image}
+	  )
     );
   }
 }

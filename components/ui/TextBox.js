@@ -7,12 +7,11 @@ class TextBox extends React.Component {
   }
 
   render() {
-    const post = this.props.post;
     return (
       React.createElement(
         'span',
         {},
-        post.str
+		this.props.str
       )
     );
   }
